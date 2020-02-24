@@ -1,0 +1,17 @@
+
+services:
+    _instanceof:
+        Contao\CoreBundle\Framework\FrameworkAwareInterface:
+            calls:
+                - ["setFramework", ["@contao.framework"]]
+
+        Symfony\Component\DependencyInjection\ContainerAwareInterface:
+            calls:
+                - ["setContainer", ["@service_container"]]
+
+    berecont.breakline.ce.breakline:
+      class: berecont\ContaoBreakline\Controller\ContentElement\Breakline
+      tags:
+          - 
+            name: contao.content_element
+            category: texts

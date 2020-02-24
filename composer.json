@@ -1,0 +1,27 @@
+{
+    "name": "berecont/contao-breakline",
+    "description": "Contao Content Element to add a <hr> tag",
+    "type": "contao-bundle",
+    "require": {
+        "contao/core-bundle": "^4.9"
+    },
+    "license": "LGPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Bernhard Renner",
+            "email": "info@berecont.at"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "berecont\\ContaoBreakline\\": "src/"
+        }
+    },
+    "extra": {
+        "contao-manager-plugin": "berecont\\ContaoBreakline\\ContaoManager\\Plugin"
+    },
+    "support": {
+        "issues": "https://github.com/berecont/contao-breakline/issues",
+        "source": "https://github.com/berecont/contao-breakline"
+    }
+}
